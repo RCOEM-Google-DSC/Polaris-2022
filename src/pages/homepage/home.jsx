@@ -6,6 +6,7 @@ export default function Home() {
     <div className="App">
       <header className="App-header">Hello World</header>
       <Link to="/hawai">Go to Hawai</Link>
+      <h1>Heey</h1>
     </div>
   );
 }
