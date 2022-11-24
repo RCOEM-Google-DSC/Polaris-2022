@@ -1,0 +1,24 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="18.1818" y="18.1818" width="13.6364" height="13.6364" fill="#61BAFB"/>
+<rect x="22.7273" y="22.7273" width="4.54545" height="4.54545" fill="#61BAFB"/>
+<rect x="22.7273" y="18.1818" width="4.54545" height="4.54545" fill="#288FF3"/>
+<rect width="4.54545" height="4.54545" transform="matrix(1 0 0 -1 22.7273 31.8182)" fill="#288FF3"/>
+<rect x="22.7273" y="13.6364" width="4.54545" height="4.54545" fill="#035CB7"/>
+<rect width="4.54545" height="4.54545" transform="matrix(1 0 0 -1 22.7273 36.3636)" fill="#035CB7"/>
+<rect x="22.7273" y="9.09091" width="4.54545" height="4.54545" fill="#0E55A0"/>
+<rect width="4.54545" height="4.54545" transform="matrix(1 0 0 -1 22.7273 40.9091)" fill="#0E55A0"/>
+<rect x="22.7273" y="4.54544" width="4.54545" height="4.54545" fill="#084375"/>
+<rect width="4.54545" height="4.54545" transform="matrix(1 0 0 -1 22.7273 45.4545)" fill="#084375"/>
+<rect x="22.7273" width="4.54545" height="4.54545" fill="#0E1A43"/>
+<rect width="4.54545" height="4.54545" transform="matrix(1 0 0 -1 22.7273 50)" fill="#0E1A43"/>
+<rect x="27.2727" y="22.7273" width="4.54545" height="4.54545" fill="#288FF3"/>
+<rect width="4.54545" height="4.54545" transform="matrix(-1 0 0 1 22.7273 22.7273)" fill="#288FF3"/>
+<rect x="31.8182" y="22.7273" width="4.54545" height="4.54545" fill="#035CB7"/>
+<rect width="4.54545" height="4.54545" transform="matrix(-1 0 0 1 18.1818 22.7273)" fill="#035CB7"/>
+<rect x="36.3636" y="22.7273" width="4.54545" height="4.54545" fill="#0E55A0"/>
+<rect width="4.54545" height="4.54545" transform="matrix(-1 0 0 1 13.6364 22.7273)" fill="#0E55A0"/>
+<rect x="40.9091" y="22.7273" width="4.54545" height="4.54545" fill="#084375"/>
+<rect width="4.54545" height="4.54545" transform="matrix(-1 0 0 1 9.09088 22.7273)" fill="#084375"/>
+<rect x="45.4545" y="22.7273" width="4.54545" height="4.54545" fill="#0E1A43"/>
+<rect width="4.54545" height="4.54545" transform="matrix(-1 0 0 1 4.54547 22.7273)" fill="#0E1A43"/>
+</svg>
