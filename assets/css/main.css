@@ -172,15 +172,33 @@ p {
   width: 100%;
 }
 
-.spaceship {
-  z-index: 1;
+.rocket {
   position: absolute;
-  left: 100px;
-  bottom: 180px;
+  transform: scale(.6) translateY(840px) translateX(80px);
+  z-index: 2;
 }
 
-.spaceship img {
-  height: 8vh;
+.rocket img {
+  width: 100px;
+}
+
+#rocket-2 img {
+  height: 100px;
+  transform: translateX(6.2px) translateY(-.6px);
+}
+
+#rocket-1 {
+  animation: flicker 200ms infinite;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .meteors {
@@ -434,4 +452,5 @@ p {
 
   color: #FFFFFF;
 }
+
 /*
