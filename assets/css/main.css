@@ -188,7 +188,7 @@ p {
 }
 
 #rocket-1 {
-  animation: flicker 200ms infinite;
+  animation: flicker 500ms infinite;
 }
 
 @keyframes flicker {
