@@ -302,7 +302,7 @@ p {
 .about_section_main {
   width: 100%;
   z-index: 2;
-  height: 700px;
+  height: 1000px;
   background-image: url(/assets/images/homepage/sky.svg);
   background-size: contain;
 }
