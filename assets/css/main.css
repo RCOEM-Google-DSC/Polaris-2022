@@ -24,7 +24,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding: 30px 8vw;
   z-index: 2;
 }
@@ -169,18 +169,36 @@ p {
 }
 
 .bottom_vector img {
-  width: 100vw;
+  width: 100%;
 }
 
-.spaceship {
-  z-index: 1;
+.rocket {
   position: absolute;
-  left: 100px;
-  bottom: 180px;
+  transform: scale(.6) translateY(840px) translateX(80px);
+  z-index: 2;
 }
 
-.spaceship img {
-  height: 8vh;
+.rocket img {
+  width: 100px;
+}
+
+#rocket-2 img {
+  height: 100px;
+  transform: translateX(6.2px) translateY(-.6px);
+}
+
+#rocket-1 {
+  animation: flicker 500ms infinite;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .meteors {
@@ -467,3 +485,54 @@ p {
   height: 15vh;
 }
 
+=======
+/* FAQ */
+.faq {
+  padding: 6rem 0;
+  background-color: #080A17;
+  font-family: "DotGothic16";
+}
+
+.faq .accordion-item {
+  background-color: transparent;
+  margin: 0.2rem 0;
+}
+
+.faq .accordion-header {
+  border: #6053fd double 0.3rem;
+}
+
+.faq h3 {
+  font-family: 'Pixeboy';
+  font-weight: 400;
+  font-size: 5rem;
+  margin: 3rem 0;
+  line-height: 4rem;
+  text-align: center;
+  color: #9991FF;
+}
+
+.faq a {
+  text-decoration: none;
+  color: white;
+}
+
+.faq .accordion-button.collapsed::after {
+  background-image: url("../images/homepage/plus.svg");
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/homepage/dash.svg");
+}
+
+.faq .accordion-button {
+  background: #6053FD;
+  color: #FFFFFF;
+}
+
+.faq .accordion-body {
+  background-color: #231E5E;
+  line-height: 2rem;
+
+  color: #FFFFFF;
+}
