@@ -10,66 +10,7 @@
    
   }
   
-  .layer img {
-    max-width: 40%;
-  }
-  
-  .first-layer {
-    position: relative;
-  }
-  
-  .last-layer{
-    padding: 12rem;
-  }
-  .top-last{
-    top: 5.55rem;
-    position: relative;
-    left: 10%;
-  }
-  .second-layer {
-    margin-top: 8rem;
-    position: relative;
-    grid-template-columns: 1fr;
-  }
-  
-  .third-layer{
-    margin-top: 3rem;
-    position: relative;
-  }
-  .right {
-    float: right;
-    right: 0;
-  }
-  
-  .left {
-    position: absolute;
-    left: 0;
-  }
-  .left-mid {
-    position: absolute;
-    left: 10%;
-    
-  }
-  .down{
-    height: 120px;
-    
-  }
-  .down2{
-    height: 32px;
-    /* top:-70px; */
-  }
-  .r1{
-    width: 400px;
-  }
-  .right1{
-    height: 33px;
-  }
-  
-  .downright{
-    height: 32px;
-  }
-  
-  
+ 
   #timeline{
   
       margin: 0;
@@ -106,8 +47,7 @@
     margin-bottom: 0.25rem;
     border-radius: 0.25rem;
     padding: 40px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+   
     
   }
   
@@ -246,18 +186,52 @@
   /*=============== BREAKPOINTS ===============*/
   /* For large devices */
   @media screen and (max-width: 992px) {
+    .borders{
+      width: 335px;
+    }
     .container__in{
-        margin-right: 7rem;
+        
         margin-top: -16rem;
+    }
+    .container__title{
+      font-size: 1px;
+    }
+    .container__subtitle{
+      font-size: 13px;
+    }
+    .a{
+      padding : 44px;
+    }
+    .qualification__line{
+      border: 9px #fff dotted;
+      transform: translate(13.3px,43px);border-left: #000;
+    }
+    .timeline__content{
+      column-gap: 0.5rem;
+    }
+    .qualification__rounder{
+      width:30px;
+      height:30px;
+      transform: translate(1.9px,6px); 
+    }
+    #pacman{
+      width: 45px;
+      margin-left : 21rem;
+    }
+    .pacman{
+      position: absolute;
+      margin-left : 15rem;
+      margin-top : 16.3rem;
+    }
+    .side{
+      margin-left: 21rem;
+      
     }
   }
   
   /* For medium devices */
   @media screen and (max-width: 768px) {
-    .container__in{
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
+    
     
   }
   
@@ -265,8 +239,6 @@
   
   /* For small devices */
   @media screen and (max-width: 350px) {
-   .timeline__content{
-    gap: 0.5rem;
-   }
+   
   }
   
