@@ -194,7 +194,7 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1600px) {
   .borders {
     width: 335px;
   }
@@ -204,7 +204,7 @@
     margin-top: -16rem;
   }
 
-  .container__title {
+  /* .container__title {
     font-size: 1px;
   }
 
@@ -246,5 +246,5 @@
   .side {
     margin-left: 21rem;
 
-  }
+  } */
 }
