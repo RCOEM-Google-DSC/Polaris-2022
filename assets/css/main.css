@@ -63,15 +63,15 @@ p {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  color: #367B80;
+  color: #fff;
   z-index: 2;
 }
 
 .nav li {
-  border: #367B80 2px solid;
+  border: #fff 2px solid;
   border-radius: 40px;
   padding: 2px 33px;
-  color: #367B80;
+  color: #fff;
   font-size: 18px;
   cursor: pointer;
   /* font-family: ; */
@@ -83,7 +83,7 @@ p {
 
 .nav a {
   text-decoration: none;
-  color: #367B80;
+  color: #fff;
 }
 
 .landing_section {
