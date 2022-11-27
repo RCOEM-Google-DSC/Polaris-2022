@@ -402,90 +402,89 @@ p {
   background-repeat: no-repeat;
 }
 
-.mario_container{
+.mario_container {
   position: relative;
   z-index: 3;
   width: 100%;
 }
 
-.lefttunnel{
+.lefttunnel {
   position: absolute;
   top: -125px;
   left: 2vw;
 }
 
-.lefttunnel img{
+.lefttunnel img {
   height: 38vh;
 }
 
-.bushes{
+.bushes {
   position: absolute;
   top: -39px;
   left: 8.2vw;
 }
 
-.bushes img{
+.bushes img {
   height: 6.5vh;
 }
 
-.ladder{
+.ladder {
   position: absolute;
   left: 85vw;
   top: -192px;
 }
 
-.brickcoin{
+.brickcoin {
   position: absolute;
   left: 30vw;
   top: -350px;
 }
 
-.brickcoin img{
+.brickcoin img {
   height: 18vh;
 }
 
-.mario{
+.mario {
   position: absolute;
   top: -55px;
   left: 12vw;
 }
 
-.mario img{
+.mario img {
   height: 9vh;
 }
 
-.brickque{
+.brickque {
   position: absolute;
   left: 60vw;
   top: -200px;
 }
 
-.brickque img{
+.brickque img {
   height: 7vh;
 }
 
-.righttunnel{
+.righttunnel {
   position: absolute;
   top: -200px;
   left: 78vw;
 
 }
 
-.righttunnel img{
+.righttunnel img {
   height: 50vh;
 }
 
-.brickcloud{
+.brickcloud {
   position: absolute;
   left: 87vw;
   top: -500px;
 }
 
-.brickcloud img{
+.brickcloud img {
   height: 15vh;
 }
 
-=======
 /* FAQ */
 .faq {
   padding: 6rem 0;
