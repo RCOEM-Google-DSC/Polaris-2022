@@ -1,272 +1,290 @@
 .timeline {
-    background-color: #080A17;
-    
-     min-height: 100vh; 
-  }
-  
-  .upward-walls {
-    min-height: 60vh;
-    padding-top: 3rem;
-   
-  }
-  
-  .layer img {
-    max-width: 40%;
-  }
-  
-  .first-layer {
-    position: relative;
-  }
-  
-  .last-layer{
-    padding: 12rem;
-  }
-  .top-last{
-    top: 5.55rem;
-    position: relative;
-    left: 10%;
-  }
-  .second-layer {
-    margin-top: 8rem;
-    position: relative;
-    grid-template-columns: 1fr;
-  }
-  
-  .third-layer{
-    margin-top: 3rem;
-    position: relative;
-  }
-  .right {
-    float: right;
-    right: 0;
-  }
-  
-  .left {
-    position: absolute;
-    left: 0;
-  }
-  .left-mid {
-    position: absolute;
-    left: 10%;
-    
-  }
-  .down{
-    height: 120px;
-    
-  }
-  .down2{
-    height: 32px;
-    /* top:-70px; */
-  }
-  .r1{
-    width: 400px;
-  }
-  .right1{
-    height: 33px;
-  }
-  
-  .downright{
-    height: 32px;
-  }
-  
-  
-  #timeline{
-  
-      margin: 0;
-      padding: 0;
-      
-  }
-  .container__in{
-    max-width: 993px;
-      margin-left: auto;
-      margin-right: auto;
-    margin-top: 8rem;
-    display: grid;
-    grid-template-columns: 0.5fr;
-    justify-content: center;
-    z-index:1;
-   
-  }
-  .container{
-    display: block;
-    row-gap: 5;
-    
-  }
-  
-  .timeline__content{
-    display:grid;
-    grid-template-columns:1fr max-content 1fr;
-    column-gap: 3rem;
-    margin-bottom : 0.5rem;
-  }
-  
-  .a{
-    
-    margin-top: 1.25rem;
-    margin-bottom: 0.25rem;
-    border-radius: 0.25rem;
-    padding: 40px;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    
-  }
-  
-  .content,
-  .front{
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; 
-  }
-  .a.red{
-    border: 2px solid red;
-  }
-  .a.green{
-    border: 2px solid rgba(239, 84, 150, 1);
-  }
-  
-  .a.blue{
-    border: 2px solid rgba(105, 202, 218, 1);
-  }
-  
-  .a.yellow{
-    border: 2px solid rgba(244, 126, 30, 1);
-  }
-  
-  .qualification__rounder{
-    display: inline-block;
-    width:40px;
-    height: 40px;
-    background-color: rgba(254, 203, 0, 1);
-    transform: translate(0.5px,6px); 
-    z-index: 0; 
-    
-  }
-  .qualification__line{
-    display: block;
-    width: 0;
-    height: 100%;
-  
-    transform: translate(13.3px,43px);
-    margin-top: -177px;
-    border: 15px #fff dotted;
-    border-left: #000;
-    z-index: 1; 
-   
-  }
-  
-  .side{
-    margin-left: 21.70rem;
-    margin-top: 1rem;
-  }
-  
-  .container__title{
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-  }
-  .container__subtitle{
-    color: #fff;
-    
-    text-decoration: none;
-  }
-  /* .borders:hover .a{
+  background-color: #080A17;
+
+  min-height: 100vh;
+}
+
+.upward-walls {
+  min-height: 60vh;
+  padding-top: 3rem;
+
+}
+
+.layer img {
+  max-width: 40%;
+}
+
+.first-layer {
+  position: relative;
+}
+
+.last-layer {
+  padding: 12rem;
+}
+
+.top-last {
+  top: 5.55rem;
+  position: relative;
+  left: 10%;
+}
+
+.second-layer {
+  margin-top: 8rem;
+  position: relative;
+  grid-template-columns: 1fr;
+}
+
+.third-layer {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.right {
+  float: right;
+  right: 0;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+}
+
+.left-mid {
+  position: absolute;
+  left: 10%;
+
+}
+
+.down {
+  height: 120px;
+
+}
+
+.down2 {
+  height: 32px;
+  /* top:-70px; */
+}
+
+.r1 {
+  width: 400px;
+}
+
+.right1 {
+  height: 33px;
+}
+
+.downright {
+  height: 32px;
+}
+
+
+#timeline {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.container__in {
+  max-width: 993px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 0.5fr;
+  justify-content: center;
+  z-index: 1;
+
+}
+
+.container {
+  display: block;
+  row-gap: 5;
+
+}
+
+.timeline__content {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.a {
+
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.25rem;
+  padding: 40px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.content,
+.front {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.a.red {
+  border: 2px solid red;
+}
+
+.a.green {
+  border: 2px solid rgba(239, 84, 150, 1);
+}
+
+.a.blue {
+  border: 2px solid rgba(105, 202, 218, 1);
+}
+
+.a.yellow {
+  border: 2px solid rgba(244, 126, 30, 1);
+}
+
+.qualification__rounder {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(254, 203, 0, 1);
+  transform: translate(2.4px, 13px);
+  z-index: 0;
+
+}
+
+.qualification__line {
+  display: block;
+  width: 0;
+  height: 100%;
+
+  transform: translate(13.3px, 43px);
+  margin-top: -177px;
+  border: 15px #fff dotted;
+  border-left: #000;
+  z-index: 1;
+
+}
+
+.side {
+  margin-left: 21.70rem;
+  margin-top: 1rem;
+}
+
+.container__title {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+}
+
+.container__subtitle {
+  color: #fff;
+
+  text-decoration: none;
+}
+
+/* .borders:hover .a{
    
         transform: rotateY(180deg);
     
   } */
-  
-  .borders{
-    width: 347px;
-  }
-  
-  .front {
-    
-    color: white;
-  }
-  .content {
-    color: white;
-    /* transform: rotateY(180deg); */
-  }
-  
-  
-  
-  .pacman{
-    position: absolute;
-    margin-top:24rem;
-    margin-left: 15.8rem;
-  }
-  
-  #pacman {
-    background: black;
-    width: 100px;
-    position : absolute;
-    margin-top : -182px;
-    margin-left : 22.6rem;
-    z-index: 100;
-    transform: rotate(88deg);
-   
-  }
-  #pacman circle {
-    stroke: yellow;
-  
+
+.borders {
+  width: 347px;
+}
+
+.front {
+
+  color: white;
+}
+
+.content {
+  color: white;
+  /* transform: rotateY(180deg); */
+}
+
+
+
+.pacman {
+  position: absolute;
+  margin-top: 24rem;
+  margin-left: 15.8rem;
+}
+
+#pacman {
+  background: black;
+  width: 65px;
+  position: absolute;
+  margin-top: -182px;
+  margin-left: 23.8rem;
+  z-index: 100;
+  transform: rotate(88deg);
+
+}
+
+#pacman circle {
+  stroke: yellow;
+
   stroke-width: 50%;
   fill: none;
   animation: chomp 0.50s linear infinite alternate;
-  
-  
+
+
+}
+
+@keyframes chomp {
+  from {
+    stroke-dasharray: 157, 100;
+    stroke-dashoffset: 0;
   }
-  
-  @keyframes chomp {
-    from {
-      stroke-dasharray: 157,100;
-      stroke-dashoffset: 0;
-    }
-    to {
-      stroke-dasharray: 126,100;
-      stroke-dashoffset: -15;
-    }
+
+  to {
+    stroke-dasharray: 126, 100;
+    stroke-dashoffset: -15;
   }
-  
-  .heading{
-    font-family: 'Pixeboy';
-      font-weight: 400;
-      font-size: 5rem;
-      margin: 3rem 0;
-      line-height: 4rem;
-      text-align: center;
-      color: #9991FF;
-    margin-left: 35.5rem;
-    margin-top: 5rem;
+}
+
+.heading {
+  font-family: 'Pixeboy';
+  font-weight: 400;
+  font-size: 5rem;
+  margin: 3rem 0;
+  line-height: 4rem;
+  text-align: center;
+  color: #9991FF;
+  margin-left: 35.5rem;
+  margin-top: 5rem;
+}
+
+.walls {
+  width: 100%;
+  height: 100%;
+
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .container__in {
+    margin-right: 7rem;
+    margin-top: -16rem;
   }
-  
-  .walls{
-    width: 100%;
-    height: 100%;
-  
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .container__in {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
-  /*=============== BREAKPOINTS ===============*/
-  /* For large devices */
-  @media screen and (max-width: 992px) {
-    .container__in{
-        margin-right: 7rem;
-        margin-top: -16rem;
-    }
-  }
-  
-  /* For medium devices */
-  @media screen and (max-width: 768px) {
-    .container__in{
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-    
-  }
-  
-  
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
-   .timeline__content{
+
+}
+
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .timeline__content {
     gap: 0.5rem;
-   }
   }
-  
+}

@@ -26,7 +26,7 @@ p {
   align-items: center;
   width: 100%;
   padding: 30px 8vw;
-  z-index: 2;
+  background: transparent;
 }
 
 .nav-logo {
@@ -64,6 +64,7 @@ p {
   align-items: center;
   gap: 25px;
   color: #367B80;
+  z-index: 2;
 }
 
 .nav li {
@@ -86,15 +87,16 @@ p {
 }
 
 .landing_section {
-
-
   height: 110vh;
   background-color: #080A17;
-  background-image: url(/assets/images/homepage/starts.svg);
+  /* background-image: url(/assets/images/homepage/starts.svg); */
   background-size: cover;
   color: white;
   background-position: 50% 50%;
   position: relative;
+  z-index: 0;
+  background: transparent;
+  z-index: 100;
 }
 
 

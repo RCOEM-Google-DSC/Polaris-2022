@@ -5,3 +5,35 @@
 body {
     overflow-x: hidden;
 }
+
+footer {
+    margin-top: -20px;
+    background: #080a17;
+    color: #ffffff;
+
+    hr {
+        width: 90%;
+        background-color: #fff;
+        height: 4px;
+        margin-left: 5%;
+        margin-bottom: 140px;
+    }
+
+    p {
+        height: auto;
+        font-size: large;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .header {
+        margin-top: 20px;
+        margin-bottom: -35px;
+        font-size: x-large;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
