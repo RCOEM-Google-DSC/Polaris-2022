@@ -274,6 +274,7 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: -540px;
 }
 
 .about_b {
@@ -436,14 +437,67 @@ p {
   top: -192px;
 }
 
-.brickcoin {
-  position: absolute;
-  left: 30vw;
-  top: -350px;
+.ladder-bush {
+  display: flex;
+  justify-content: space-between;
+  background: #82aeff;
 }
 
-.brickcoin img {
-  height: 18vh;
+.ladder-bush img {
+  height: 24vh;
+}
+
+.tunnel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 0 55px;
+  transform: translateY(-150px);
+  z-index: 4;
+}
+
+#rightt {
+  transform: translate(-120px, -20px);
+}
+
+.tunnel img {
+  width: 110px;
+}
+
+.mario-con {
+  position: absolute;
+  transform: translateY(-8vh) translateX(200px);
+  z-index: 20;
+}
+
+.mario-con img {
+  height: 8vh;
+}
+
+#bush {
+  width: 550px;
+  margin-left: 10vw;
+  transform: translateY(70px);
+}
+
+.coins-holder {
+  display: flex;
+  justify-content: space-between;
+  background: #82aeff;
+  background: transparent;
+  padding: 0 20%;
+}
+
+.coins {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.coins img {
+  width: 12vw;
+  max-width: 140px;
 }
 
 .mario {
@@ -453,7 +507,7 @@ p {
 }
 
 .mario img {
-  height: 9vh;
+  height: 5vw;
 }
 
 .brickque {
@@ -475,16 +529,21 @@ p {
 
 .righttunnel img {
   height: 50vh;
+  max-width: 180px;
 }
 
 .brickcloud {
-  position: absolute;
-  left: 87vw;
-  top: -500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
+  padding: 10px;
+  transform: translateX(-10px);
 }
 
 .brickcloud img {
-  height: 15vh;
+  height: 15vw;
+  max-width: 180px;
 }
 
 /* FAQ */
