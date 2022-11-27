@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Pixeboy;
-  src: url(/assets/fonts/Pixeboy-z8XGD.ttf);
+  src: url(./../fonts/Pixeboy-z8XGD.ttf);
 }
 
 * {
@@ -324,7 +324,7 @@ p {
   width: 100%;
   z-index: 2;
   height: 1220px;
-  background-image: url(/assets/images/homepage/sky.svg);
+  background-image: url(./../images/homepage/sky.svg);
   background-size: cover;
 }
 
@@ -342,7 +342,7 @@ p {
   width: 100%;
   z-index: 2;
   height: 400px;
-  background-image: url(/assets/images/homepage/soilmario.svg);
+  background-image: url(./../images/homepage/soilmario.svg);
   /* background-size: contain; */
   background-size: cover;
 }
@@ -400,7 +400,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/images/homepage/about_button.svg);
+  background-image: url(./../images/homepage/about_button.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -578,11 +578,11 @@ p {
 }
 
 .faq .accordion-button.collapsed::after {
-  background-image: url("../images/homepage/plus.svg");
+  background-image: url("./../images/homepage/plus.svg");
 }
 
 .faq .accordion-button:not(.collapsed)::after {
-  background-image: url("../images/homepage/dash.svg");
+  background-image: url("./../images/homepage/dash.svg");
 }
 
 .faq .accordion-button {
