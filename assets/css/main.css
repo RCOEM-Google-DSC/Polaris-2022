@@ -620,6 +620,17 @@ p {
   border: 1px solid #000;
 }
 
+.socials img {
+  height: 48px;
+}
+
+.socials img:hover {
+  transform: scale(.95);
+}
+
+.socials img:active {
+  transform: scale(.9);
+}
 
 @media screen and (max-width: 3000px) {
 
