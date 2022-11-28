@@ -91,7 +91,7 @@
 .qualification__line {
   display: block;
   width: 0;
-  height: 400%;
+  height: 430%;
 
   transform: translateX(18px);
 
@@ -137,7 +137,7 @@
   width: 40px;
   height: 40px;
   background: yellow;
-  transform: translate(45px, -22.5vh);
+  transform: translate(40px, -22.5vh);
   z-index: 2;
 }
 
@@ -169,7 +169,7 @@
 
 #pacman {
   width: 74px;
-  margin-left: 50px;
+  margin-left: 40px;
   z-index: 100;
   transform: rotate(91deg);
 
