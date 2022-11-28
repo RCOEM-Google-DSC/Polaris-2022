@@ -5,6 +5,11 @@
   src: url(./../fonts/Pixeboy-z8XGD.ttf);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 html {
   width: 100vw;
   overflow-x: hidden;
@@ -743,3 +748,5 @@ p {
 #about {
   font-family: Pixeboy;
 }
+
+

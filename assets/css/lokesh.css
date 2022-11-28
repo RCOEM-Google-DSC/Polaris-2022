@@ -65,10 +65,13 @@
 
 .a.green {
   border: 2px solid rgba(239, 84, 150, 1);
+  margin-left: 2.3rem;
 }
+
 
 .a.blue {
   border: 2px solid rgba(105, 202, 218, 1);
+  margin-left: 2.3rem;
 }
 
 .a.yellow {
@@ -80,7 +83,7 @@
   width: 40px;
   height: 40px;
   background-color: rgba(254, 203, 0, 1);
-  transform: translate(0.5px, 6px);
+  transform: translate(12px, 6px);
   z-index: 0;
 
 }
@@ -134,7 +137,7 @@
   width: 40px;
   height: 40px;
   background: yellow;
-  transform: translate(40px, -22.5vh);
+  transform: translate(45px, -22.5vh);
   z-index: 2;
 }
 
@@ -166,7 +169,7 @@
 
 #pacman {
   width: 74px;
-  margin-left: 38px;
+  margin-left: 50px;
   z-index: 100;
   transform: rotate(91deg);
 
