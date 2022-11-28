@@ -14,7 +14,7 @@
     width: .1rem;
     border-radius: 50%;
     background: transparent;
-    animation: animStar 100s linear infinite;
+    animation: animStar 40s linear infinite;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
         1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
         36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff,
@@ -574,6 +574,6 @@
     }
 
     to {
-        transform: translateX(-200rem)
+        transform: translateX(-50rem)
     }
 }
