@@ -5,37 +5,11 @@
   box-sizing: border-box;
 }
 
-.bottompart {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-.bottompart .soil {
-  position: absolute;
-  bottom: -10px;
-}
-.bottompart .soil img {
-  height: 65px;
-}
-.bottompart .submitwood {
-  position: absolute;
-  bottom: 40px;
-  left: 80vw;
-}
-.bottompart .submitwood img {
-  height: 150px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background: url(../images/sky.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .clouds-1,
@@ -106,8 +80,39 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 20rem;
-  width: 15rem;
+  width: 13rem;
   position: absolute;
   right: 7rem;
   top: 15rem;
+}
+
+.bottompart {
+  width: 100%;
+  height: 99.5vh;
+  position: relative;
+}
+.bottompart .soil {
+  position: absolute;
+  bottom: -10px;
+}
+.bottompart .soil img {
+  z-index: 1;
+  width: 100%;
+}
+.bottompart .submitwood {
+  position: absolute;
+  bottom: 40px;
+  left: 80vw;
+}
+.bottompart .submitwood .submit {
+  position: absolute;
+  left: 2rem;
+  top: 2.8rem;
+  background: url(../images/homepage/SUBMIT.svg);
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+}
+.bottompart .submitwood img {
+  height: 150px;
 }/*# sourceMappingURL=mario.css.map */
