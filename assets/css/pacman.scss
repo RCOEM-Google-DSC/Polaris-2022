@@ -26,7 +26,9 @@ p {
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+  position: relative;
   &_box {
+    z-index: 1;
     padding: 30px;
     background-image: url(/assets/images/pacman/header_background.svg);
     background-position: center;
@@ -42,6 +44,11 @@ p {
       letter-spacing: -0.022em;
       color: #000000;
     }
+  }
+  .pacman_animation {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
   }
 }
 
@@ -108,136 +115,176 @@ p {
   }
 }
 
-.crossword {
-  .container {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
+.final__path {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.final__path::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-top: 12px dotted white;
+  color: white;
+  width: 100%;
+  top: 50%;
+  // left: 5%;
+  margin-top: -6px;
+}
 
-  .crosswordDisplay {
-    top: 5rem;
-  }
+.final__pacman {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: -20%;
+  animation: final__moveForward 5s linear infinite;
+  animation-delay: 0.8s;
+}
 
-  .clueBlock {
-    position: relative;
-    margin-bottom: 5em;
-  }
-  .clueDirection {
-    text-align: left;
-    margin: 1em 0 0.25em 122px;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #000;
-  }
-  .word,
-  .clue,
-  .lineNum {
-    display: inline-block;
-    height: 1.4em;
-    padding: 0 5px;
-  }
-  .word {
-    text-align: right;
-    width: 100px;
-    margin: 0 20px 0 0;
-  }
-  .clue {
-    width: 500px;
-    margin: 0 0 4px 0;
-  }
-  .lineNum {
-    font: 1em calibri;
-    line-height: 1.8em;
-  }
-  .clueReadOnly {
-    border-color: rgba(0, 0, 0, 0);
-    margin: 0;
-    outline: 0;
-    color: #303030;
-    background: none;
-  }
+.final__pacman::before,
+.final__pacman::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid 30px yellow;
+  margin-top: -30px;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  animation: final__mouthTop 0.7s ease infinite;
+}
 
-  .crossword {
-    display: block;
-    background-color: rgb(32, 32, 32);
-  }
-  .square {
-    margin: 0 1px 1px 0;
-    display: inline-block;
-    position: relative;
-    font: 24px Calibri;
-    width: 1.25em;
-    height: 1.25em;
-    line-height: 1.25em;
-    vertical-align: top;
-  }
-  .char:focus {
-    -webkit-box-shadow: 0 0 0 2px rgb(0, 133, 180);
-    -moz-box-shadow: 0 0 0 2px rgb(0, 133, 180);
-    box-shadow: inset 0 0 0 2px rgb(0, 133, 180);
-  }
-  .char {
-    font-family: sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    outline: 0;
-    border: 0;
-    padding: 0;
-    margin: 1px 0 0 -1px;
-    width: 1.25em;
-    height: 1.25em;
-    text-align: center;
-    background-color: rgb(200, 200, 200);
-  }
-  .charReadOnly:focus {
-    -webkit-box-shadow: 0 !important;
-    -moz-box-shadow: 0 !important;
-    box-shadow: 0 !important;
+.final__pacman::after {
+  border-color: yellow;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  animation: final__mouthBottom 0.7s ease infinite;
+}
 
-    border-color: rgba(0, 0, 0, 0);
-    margin: 0;
-    outline: 0;
-    color: #303030;
-  }
+.final__ghost {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 20%;
+  margin-top: -35px;
+  background: red;
+  height: 70px;
+  width: 60px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  animation: final__moveForward 5s linear infinite, final__colourSwap 0.5s linear infinite;
+}
 
-  .num {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    font-size: 0.5em;
-    line-height: 1em;
-    pointer-events: none;
-  }
+/* using these for eyes */
+.final__ghost::before,
+.final__ghost::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 25px;
+  width: 20px;
+  border-radius: 100%;
+  top: 15px;
+  left: 4px;
+}
 
-  .hide {
-    visibility: hidden;
-  }
-  .disabled {
-    display: none !important;
-  }
+.final__ghost::after {
+  left: 28px;
+}
 
-  .btn:hover {
-    cursor: pointer;
-    background-color: rgb(150, 150, 150);
-  }
+.final__eyes::before,
+.final__eyes::after {
+  content: "";
+  position: absolute;
+  background: blue;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  top: 25px;
+  left: 5px;
+  z-index: 99;
+  animation: final__peeperLeft 0.7s linear infinite;
+}
 
-  #btnCheck {
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-    cursor: pointer;
-  }
+.final__eyes::after {
+  left: 30px;
+  animation: final__peeperRight 0.7s linear infinite;
+}
 
-  #btnReset {
-    position: absolute;
-    left: 2rem;
-    top: 1rem;
-    cursor: pointer;
+.final__skirt {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: solid 10px #333;
+  border-top-color: transparent;
+  bottom: -10px;
+}
+.final__skirt::after,
+.final__skirt::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: solid 10px #333;
+  border-top-color: transparent;
+  bottom: -10px;
+  left: 10px;
+}
+.final__skirt::after {
+  border-color: #333;
+  border-top-color: transparent;
+  bottom: -10px;
+  left: 30px;
+}
+
+@keyframes final__moveForward {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes final__mouthTop {
+  50% {
+    transform: rotate(44deg);
+  }
+}
+
+@keyframes final__mouthBottom {
+  50% {
+    transform: rotate(-44deg);
+  }
+}
+
+@keyframes final__peeperLeft {
+  0%,
+  100% {
+    left: 5px;
+  }
+  50% {
+    left: 10px;
+  }
+}
+
+@keyframes final__peeperRight {
+  0%,
+  100% {
+    left: 30px;
+  }
+  50% {
+    left: 38px;
+  }
+}
+
+@keyframes final__colourSwap {
+  50% {
+    background: hotpink;
   }
 }
