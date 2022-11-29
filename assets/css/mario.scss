@@ -76,3 +76,14 @@
             }
         }
     }
+
+    .videoplayer {
+        background: url(../images/homepage/videoplayer.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 15rem;
+        position: absolute;
+        right: 7rem;
+        top: 15rem;
+    }
