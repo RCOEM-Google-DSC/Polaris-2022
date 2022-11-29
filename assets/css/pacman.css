@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+@font-face {
+  font-family: Pixeboy;
+  src: url(./../fonts/Pixeboy-z8XGD.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+p {
+  margin: 0;
+}
+
+.pacman_game {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #080a17;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.header_box {
+  padding: 30px;
+  background-image: url(/assets/images/pacman/header_background.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header_box p {
+  font-family: "Pixeboy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35.37px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.022em;
+  color: #000000;
+}
+
+.main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+.main_left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+.main_left .card {
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 300px;
+  border: #ff8c8c 3px solid;
+  border-radius: 20px;
+  padding: 20px 20px 50px 20px;
+  box-shadow: 0px 0px 5px #fff;
+}
+.main_left .card:nth-child(2) {
+  border: #69cada 2px solid;
+}
+.main_left .card img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.main_left .card_content {
+  font-family: "DotGothic16";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.4456px;
+  line-height: 150%;
+  /* or 28px */
+  letter-spacing: -0.022em;
+  color: #ffffff;
+}
+.main_right .crossword_container {
+  position: relative;
+}
+.main_right .crossword_container .left_img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main_right .crossword_container .left_img img {
+  width: 30vw;
+}
+
+.crossword .container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.crossword .crosswordDisplay {
+  top: 5rem;
+}
+.crossword .clueBlock {
+  position: relative;
+  margin-bottom: 5em;
+}
+.crossword .clueDirection {
+  text-align: left;
+  margin: 1em 0 0.25em 122px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+}
+.crossword .word,
+.crossword .clue,
+.crossword .lineNum {
+  display: inline-block;
+  height: 1.4em;
+  padding: 0 5px;
+}
+.crossword .word {
+  text-align: right;
+  width: 100px;
+  margin: 0 20px 0 0;
+}
+.crossword .clue {
+  width: 500px;
+  margin: 0 0 4px 0;
+}
+.crossword .lineNum {
+  font: 1em calibri;
+  line-height: 1.8em;
+}
+.crossword .clueReadOnly {
+  border-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  outline: 0;
+  color: #303030;
+  background: none;
+}
+.crossword .crossword {
+  display: block;
+  background-color: rgb(32, 32, 32);
+}
+.crossword .square {
+  margin: 0 1px 1px 0;
+  display: inline-block;
+  position: relative;
+  font: 24px Calibri;
+  width: 1.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+  vertical-align: top;
+}
+.crossword .char:focus {
+  box-shadow: inset 0 0 0 2px rgb(0, 133, 180);
+}
+.crossword .char {
+  font-family: sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 1px 0 0 -1px;
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  background-color: rgb(200, 200, 200);
+}
+.crossword .charReadOnly:focus {
+  box-shadow: 0 !important;
+  border-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  outline: 0;
+  color: #303030;
+}
+.crossword .num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-size: 0.5em;
+  line-height: 1em;
+  pointer-events: none;
+}
+.crossword .hide {
+  visibility: hidden;
+}
+.crossword .disabled {
+  display: none !important;
+}
+.crossword .btn:hover {
+  cursor: pointer;
+  background-color: rgb(150, 150, 150);
+}
+.crossword #btnCheck {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  cursor: pointer;
+}
+.crossword #btnReset {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=pacman.css.map */
