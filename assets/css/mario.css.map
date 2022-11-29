@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AACD,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,KAAK;CAC1B",
-    "sources": [
-        "mario.scss"
-    ],
-    "names": [],
-    "file": "mario.css"
-}
+{"version":3,"sources":["mario.scss","mario.css"],"names":[],"mappings":"AAAA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ACCJ;;ADGA;EACI,YAAA;EACA,aAAA;EACA,kBAAA;ACAJ;ADEI;EACI,kBAAA;EACA,aAAA;ACAR;ADGI;EACI,YAAA;ACDR;ADII;EACI,kBAAA;EACA,YAAA;EACA,UAAA;ACFR;ADKI;EACI,aAAA;ACHR","file":"mario.css"}

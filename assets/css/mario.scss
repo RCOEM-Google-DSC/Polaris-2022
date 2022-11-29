@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.bottompart{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .soil{
+        position: absolute;
+        bottom: -10px;
+    }
+
+    .soil img{
+        height: 65px;
+    }
+    
+    .submitwood{
+        position: absolute;
+        bottom: 40px;
+        left: 80vw;
+    }
+
+    .submitwood img{
+        height: 150px;
+    }
+}
+

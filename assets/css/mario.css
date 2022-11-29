@@ -1,11 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: wheat;
+.bottompart {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
-/*# sourceMappingURL=mario.css.map */
+.bottompart .soil {
+  position: absolute;
+  bottom: -10px;
+}
+.bottompart .soil img {
+  height: 65px;
+}
+.bottompart .submitwood {
+  position: absolute;
+  bottom: 40px;
+  left: 80vw;
+}
+.bottompart .submitwood img {
+  height: 150px;
+}/*# sourceMappingURL=mario.css.map */
