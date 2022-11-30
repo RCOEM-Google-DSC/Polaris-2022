@@ -2,18 +2,20 @@
     font-family: Pixeboy;
     src: url(./../fonts/Pixeboy-z8XGD.ttf);
   }
-
+  
 body{
     background-color: #080A17;
+    overflow: hidden;
 }
 
 .vector_bottom{
     z-index: 0;
     position: absolute;
-    bottom: 0;
+    top: 65vh;
+    width: 100vw;
 }
 .vector_bottom img{
-    width: 100%;
+    width: 105vw;
 }
 
 .stars{
@@ -23,7 +25,6 @@ body{
 }
 
 .text-box{
-/* box-sizing: border-box; */
 text-align: center;
 position: absolute;
 width: 60vw;
@@ -32,6 +33,8 @@ left: 20vw;
 top: 15vh;
 color:white;
 padding: 10px;
+padding-top: 20px;
+font-size: 3vh;
 font-family: 'Pixeboy';
 background: #080A17;
 border: 1.5px solid #FFFFFF;
@@ -39,21 +42,35 @@ border-radius: 35px;
 }
 
 .planet__red{
-position: absolute;
-top: 5vh;
-right:12vw;
+    position: absolute;
+    top: 5vh;
+    right:12vw;
+    cursor: pointer;
+    transition: transform 0.5 ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease;
+    -moz-transition: -moz-transform 1s ease;
+    -o-transition: -o-transform 1s ease;
+    transition: transform 1s ease;
+}
+.planet__red:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
 }
 .planet__red img{
     height: 10vh;
 }
 
-/* .hint{
+.coins{
     position: absolute;
-    font-family: 'Pixeboy';
-    font-size: 30px;
-    top: 25px;
-    right: 11px;
-} */
+    top: 4vh;
+    right: 4vw;
+}
+.coins img{
+    height: 6vh;
+}
 
 .planet__yellow{
     position: absolute;
@@ -67,50 +84,47 @@ height: 91.25px;
 right: 10vw;
 top: 35vh;
 }
+
 .spaceship{
     position:absolute;
     display: flex;
     justify-content: space-between;
-    column-gap: 80px;
+    column-gap: 5vw;
     position: absolute;
-    /* width: 60.05px;
-    height: 60px; */
-    bottom: 10px;
-    left: 169.01px;
-    top:500px;
-    
+    left: 10vw;
+    top:65vh;
 }
 .spaceship img{
     height: 8vh;
 }
-
-.ammo1{
+#spaceship2{
     position: absolute;
-    left: 20vw;
-    bottom: 19vh;
+    transform: translateX(8px);
+    z-index: 2;
+}
+#spaceship1{
+    z-index: 2;
+    animation: flicker 700ms infinite;
+}
+@keyframes flicker {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
-/* .submit{
-    position: absolute;
-    bottom: 10vh;
-    left: 50vw;
-} */
-
 .text-box-Small{
-/* box-sizing: border-box; */
 position: absolute;
 width: 400px;
 height: 51px;
-left: 82vh;
-top: 400px;
-
+left: 37vw;
+top: 55vh;
 background: #080A17;
 border: 4px solid #FFFFFF;
 border-radius: 13px;
 }
+
 .texts{
 border-radius: 5px;    
-width:388px;
+width:390px;
 position:relative;
 box-shadow: 3px 3px;
 font-family: 'Pixeboy';
@@ -121,25 +135,62 @@ text-align: center;
 justify-content: center;
 color: #737373;
 }
+
 .enemy{
     width: 50px;
     height:50px;
 }
 .enemies{
   position: absolute;
-  top: 550px;
+  top: 65vh;
   display: grid;
   row-gap: 6px;
-  /* left: 950px; */
 }
 .enemies1{
   position: absolute;
-  top: 400px;
+  top: 42vh;
   display: grid;
   row-gap: 6px;
 }
+
 .submitbtn{
     position: absolute;
     left:41vw;
-    top:600px;
+    top:80vh;
+    cursor: pointer;
+    transition: transform 0.5 ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease;
+    -moz-transition: -moz-transform 1s ease;
+    -o-transition: -o-transform 1s ease;
+    transition: transform 1s ease;
+}
+
+.submitbtn:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+    .vector_bottom{
+        top: 80vh;
+        width: 100%;
+    }
+    .vector_bottom img{
+        width: 110vw;
+    }
+    .stars img{
+        width: 110vw;
+    }
+    .submitbtn{
+    left:38vw;
+    }
+    .text-box-Small{
+        left: 32vw;
+    }
+    body{
+        overflow: hidden;
+    }
 }
