@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/mario.css" />
+  <link rel="stylesheet" href="./assets/css/mcq.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="GameBody">
+    <div class="clouds-1"></div>
+    <div class="clouds-2"></div>
+    <div class="clouds-3"></div>
+    <div class="hintclouds"></div>
+    <div class="questionBox">
+      <div class="title">
+        <p class="quiz-name" id="quiz-name">
+          Oops Oops, what is hidden?? Help Mario!! Find the hidden element. (The mix-blend-mode CSS property sets how an
+          element's content should blend with the content of the element's parent and the element's background. Options:
+          {normal, darken, difference, lighten, saturation})
+        </p>
+      </div>
+      <div class="questions">
+        <div class="codeheader" id="codeheader_css">Mario's CSS</div>
+        <div id="codebox">
+          <pre><code data-language="css">.sky > .invisible_objects {
+        position: absolute;
+        mix-blend-mode: <input value="" type="text" class="question_input"/>;
+    }</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="videoplayer"></div>
+    <div class="bottompart">
+      <button class="submitwood" style="border: none; background: none; cursor: pointer;">
+        <img src="/assets/images/homepage/submitboard.svg" alt="" />
+        <!-- <div class="submit"></div> -->
+      </button>
+      <div class="soil">
+        <img src="/assets/images/soil.svg" alt="" />
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
