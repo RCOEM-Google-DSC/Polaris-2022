@@ -12,7 +12,9 @@ body {
 p {
   margin: 0;
 }
-
+.cwp_q_container{
+  display: none;
+}
 .pacman_game {
   min-height: 100vh;
   width: 100vw;
@@ -29,7 +31,7 @@ p {
 .header_box {
   z-index: 1;
   padding: 30px;
-  background-image: url(/assets/images/pacman/header_background.svg);
+  background-image: url(../images/pacman/header_background.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -322,3 +324,5 @@ p {
     background: hotpink;
   }
 }/*# sourceMappingURL=pacman.css.map */
+
+
