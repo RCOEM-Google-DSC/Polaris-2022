@@ -28,7 +28,7 @@ p {
 }
 .header_box {
   z-index: 1;
-  padding: 30px;
+  padding: 55px;
   background-image: url(/assets/images/pacman/header_background.svg);
   background-position: center;
   background-size: contain;
