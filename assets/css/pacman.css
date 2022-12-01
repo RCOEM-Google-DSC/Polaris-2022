@@ -32,6 +32,7 @@ p {
   z-index: 1;
   padding: 30px;
   background-image: url(../images/pacman/header_background.svg);
+
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
