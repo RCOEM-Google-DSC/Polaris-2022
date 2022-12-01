@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/asteroid.css">
+    <link rel="stylesheet" href="./assets/css/asteroid_q2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
@@ -24,17 +24,19 @@
         <div class="planet__yellow"><img src=".\assets\images\homepage\yellow_planet.svg" alt="red-Planet"></div>
 
         <div class="text-box">
-            <div>
-                Bill and Ray are playing game just like you. They are having a rope of n meters and alternatively perform an operation on the rope. In an operation, one can cut the rope by one of the divisors of the length of the rope (excluding 1 and n). 
+            <div >
+                Pratik and Sid are Best Friends, they are playing Mario card games. Initially there are N cards numbered from 1 to N. In each turn a player selects one card and take out from the Board. This continues until there is only one number left on the board, i. e. turns are made. Pratik makes the first move, then alternate turns.
+                <br><br>
+                Pratik wants to minimize the last number that would be left on the board, while Sid wants to maximize it.
                 <br>
-                At the end, the player who couldn't make a move would lose. If both players play the game optimally who would win the game?
+                You want to know what number will be left on the board after turns if both make optimal moves.
             </div>
         </div>
+
         <div class="text-box-Small"><input type="text"  class="texts" placeholder="Your Text Here"></div>
         
         <div class="planet__purple"><img src=".\assets\images\homepage\purple_planet.svg" alt="red-Planet"></div>
         <div class="planet__red"><img src=".\assets\images\homepage\hint.svg" alt="red-Planet"></div>
-        
         <div class="coins"><img src=".\assets\images\homepage\coin.svg" alt=""></div>
         <div class="enemies1"> 
             <img src=".\assets\images\homepage\enemy.svg" class="enemy" style="position:relative;left:94vw;" alt=""> 
@@ -46,10 +48,10 @@
             <img id="spaceship1" src=".\assets\images\homepage\rocket-1.svg" alt="">
             <img id="spaceship2" src=".\assets\images\homepage\rocket-2.svg" alt="">
         </div>
+        
         <div class="ammo">
             <img src=".\assets\images\homepage\ammo.svg">
         </div>
-    
     <div class="enemies"> 
         <img src=".\assets\images\homepage\enemy.svg" class="enemy" style="position:relative;left:70vw;" alt="">
         <img src=".\assets\images\homepage\enemy.svg" class="enemy" style="position:relative;left:77vw;" alt="">
@@ -60,27 +62,32 @@
     <div class="sample">
         <span class="sInput">
           <div class="headings">Sample-Input:</div>
-          <div>2</div>
-          <div>5013</div>
-          <div>8</div>
+          <div>1</div>
+          <div>4</div>
+          <div>1 2 3 4</div>
         </span>
         <span class="line"></span>
         <span class="sOutput">
           <div class="headings">Sample-Output:</div>
-          <div>BillRay</div>
+          <div>2</div>
         </span>
     </div>
     <div class="input">
         <div>Input:</div>
-        <div>
-            4<br>
-            512<br>
-            251<br>
-            1024<br>
-            723<br><br>
+        <div>3<br>
+            9<br>
+            44 53 51 80 5 27 74 79 94<br><br>
+            
+            10<br>
+            38 82 23 37 96 4 81 60 67 86<br><br>
+            
+            15<br>
+            86 78 99 32 1 2 3 4 5 6 7 8 10 11 12<br><br>
             Note: Output should be in one line
         </div>
+    </div>
 </div>
+
 <div class="submitbtn"><img src=".\assets\images\homepage\submit.svg" alt=""></div>        
 </body>
 </html>
